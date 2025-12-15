@@ -21,7 +21,7 @@ public class TTSCheckVersionNumber {
         public string body;
     }
         
-    const string unityVersion = "2019.4";
+    const string unityVersion = "6000.0";
     const string versionPath = "version.txt";
 
     static TTSCheckVersionNumber()
@@ -37,7 +37,7 @@ public class TTSCheckVersionNumber {
 
         ContinuationManager.Add(() => webRequest.isDone, () =>
         {
-            if (webRequest.isNetworkError) //Error
+            if (webRequest.error != null) //Error
             {
                 Debug.LogError("Failed to fetch version number from GitHub: " + webRequest.error);
             }

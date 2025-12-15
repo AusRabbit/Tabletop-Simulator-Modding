@@ -7,6 +7,9 @@
 /[Ll]ibrary/
 sysinfo.txt
 *.stackdump
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
  
 # ============================================= #
 # Visual Studio / MonoDevelop / Rider generated #

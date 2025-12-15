@@ -43,6 +43,7 @@ namespace AssetBundles
                 }
 
                 Debug.Log("Build complete! AssetBundles can be found in the 'Tabletop-Simulator-Modding/AssetBundles' folder.");
+                EditorUtility.RevealInFinder(Path.GetFullPath(outputPath) + Path.DirectorySeparatorChar);
             }
             catch(Exception e)
             {
